@@ -14,7 +14,7 @@ const create = (user) => {
 }
 
 const list = ()=>{
-    return fetch('/api/user',{
+    return fetch('/api/users',{
         method : 'GET'
     })
     .then(response=>{
@@ -67,4 +67,4 @@ const remove = (params, credentials)=>{
 }
 
 
-export {create, read, update, remove}
+export {create, list, read, update, remove}
